@@ -30,7 +30,7 @@ function presendHandler(obj) {
   // Any number between 6 and 8 digits. 
   dobDigitsOnly = "^[0-9]{6,8}$"
 
-  userInput = userInput.replace(emailReg, '').replace(ssndReg, '').replace(ssnReg, '').replace(phoneReg, '').replace(dobSlash,'').replace(dobDash,'').replace(dobLong,'').replace(dobDigitswSpace,'').replace(dobDigitsOnly,'')
+  userInput = userInput.replace(emailReg, 'REDACTED').replace(ssndReg, 'REDACTED').replace(ssnReg, 'REDACTED').replace(phoneReg, 'REDACTED').replace(dobSlash,'REDACTED').replace(dobDash,'REDACTED').replace(dobLong,'REDACTED').replace(dobDigitswSpace,'REDACTED').replace(dobDigitsOnly,'REDACTED')
   obj.data.input.text = userInput
 }
 
